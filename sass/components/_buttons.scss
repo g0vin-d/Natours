@@ -1,4 +1,5 @@
 .btn {    
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -9,6 +10,10 @@
         border-radius: 10rem;
         transition: all .2s;
         position: relative;
+
+        // changes for <button>
+        border: none;
+        cursor: pointer;
 
     }
 
@@ -22,7 +27,8 @@
         }
     }
 
-    &:active {
+    &:active,
+    &:focus {
         transform: translateY(-.1rem);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
     }
