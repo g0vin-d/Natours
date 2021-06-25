@@ -67,9 +67,23 @@
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
-                            <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+
+                            <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                alt="Photo 1" class="composition__photo composition__photo--p1" src="img/nat-1-large.jpg">
+
+                            <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                alt="Photo 2" class="composition__photo composition__photo--p2" src="img/nat-2-large.jpg">
+
+                            <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                alt="Photo 3" class="composition__photo composition__photo--p3" src="img/nat-3-large.jpg">
+                            
+
+                            <!-- <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
                             <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3"> -->
                         </div>
                     </div>
                 </div>
@@ -236,7 +250,11 @@
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="img/nat-8.jpg" alt="picture of guy in tour" class="story__img">
+
+                            <img srcset="img/nat-8-small.jpg 480w, img/nat-8.jpg 2000w"
+                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 42vw, 285px"
+                                alt="picture of guy in tour" class="story__img" src="img/nat-8.jpg">
+
                             <figcaption class="story__caption">Mary Smith</figcaption>
                         </figure>
                         <div class="story__text">
@@ -249,7 +267,11 @@
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="img/nat-9.jpg" alt="picture of guy in tour" class="story__img">
+
+                            <img srcset="img/nat-9-small.jpg 480w, img/nat-9.jpg 2000w"
+                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 42vw, 285px"
+                                alt="picture of guy in tour" class="story__img" src="img/nat-9.jpg>
+
                             <figcaption class="story__caption">Jack Wilson</figcaption>
                         </figure>
                         <div class="story__text">
@@ -313,7 +335,13 @@
 
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" 
+                        media="(max-width: 37.5em)" >
+                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
+                </picture>
+
             </div>
             <div class="row">
                 <div class="col-1-of-2">
@@ -329,7 +357,7 @@
                 </div>
                 <div class="col-1-of-2">
                     <p class="footer__copyright">
-                        Desiged by <a href="#" class="footer__link">jonas Schmedmann</a> copyright &copy; Built by <a href="#" class="footer__link">Govind Thakre</a>
+                        copyright &copy; Built by <a href="#" class="footer__link">Govind Thakre</a>, Inspired by <a href="#" class="footer__link">jonas Schmedmann</a>  
 
                     </p>
                 </div>
@@ -347,7 +375,7 @@
                     <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
                     <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
                     <p class="popup__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo faucibus suscipit. Nunc sit amet porta tortor. Proin hendrerit dignissim augue a ullamcorper. Morbi imperdiet, velit interdum congue gravida, orci felis ullamcorper nulla, et congue ante justo at elit. Pellentesque aliquam rhoncus ante, id scelerisque nisl facilisis a. Quisque id tempus massa, varius cursus nunc. In hac habitasse platea dictumst. In nulla ligula, varius vitae magna et, fermentum viverra mauris. Cras vel dolor lorem. Nulla ex mi, viverra non suscipit in, vestibulum sed lorem. Nam a pulvinar lorem, et elementum enim. Vivamus pellentesque maximus libero sit amet sollicitudin. In arcu ipsum, blandit vitae nunc vel, luctus volutpat erat. Fusce ultrices, ipsum vel euismod fringilla, risus ante sodales est, nec sollicitudin quam felis vitae mauris. Aliquam placerat lorem in aliquam gravida. Curabitur non ante scelerisque, malesuada lorem quis, egestas eros. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo faucibus suscipit. Nunc sit amet porta tortor. Proin hendrerit dignissim augue a ullamcorper. Morbi imperdiet, velit interdum congue gravida, orci felis ullamcorper nulla, et congue ante justo at elit. Pellentesque aliquam rhoncus ante, id scelerisque nisl facilisis a. Quisque id tempus massa, varius cursus nunc. In hac habitasse platea dictumst. In nulla ligula, varius vitae magna et, fermentum viverra mauris. Cras vel dolor lorem. Nulla ex mi, viverra non suscipit in, vestibulum sed lorem. Nam a pulvinar lorem, et elementum enim. Vivamus pellentesque maximus libero sit amet sollicitudin. 
                     </p>
                     <a href="#" class="btn btn--green">Book now</a>
                 </div>

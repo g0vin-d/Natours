@@ -33,6 +33,8 @@ breakpoint argument Choices
 
 // 1em = 16px;
 
+//Order = Base + typography > general layout + gridd > page layout > components
+
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
         @media(max-width: 37.5em) { @content}; //600px
